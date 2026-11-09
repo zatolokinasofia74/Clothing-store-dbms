@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: clothing_store_db
+    environment:
+      POSTGRES_DB: clothing_store
+      POSTGRES_USER: store_admin
+      POSTGRES_PASSWORD: admin_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql  # <-- Автоініціалізація схеми
+
+  redis:
+    image: redis:7-alpine
+    container_name: clothing_store_cache
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata:

@@ -1,0 +1,95 @@
+/* Main layout light background and text */
+.stApp {
+    background-color: #F8FAFC;
+    color: #0F172A;
+}
+
+/* Header & text styling */
+h1, h2, h3, h4, h5, h6, p, label {
+    color: #0F172A !important;
+}
+
+/* Sidebar light styling */
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0;
+}
+
+/* Metric Card Container */
+div[data-testid="stMetric"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+div[data-testid="stMetric"] label {
+    color: #475569 !important;
+    font-weight: 600 !important;
+}
+div[data-testid="stMetric"] div[data-testid="stMetricValue"] {
+    color: #0F172A !important;
+    font-weight: 700 !important;
+}
+
+/* Input fields and select boxes styling */
+input, textarea, select {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid #94A3B8 !important;
+    border-radius: 6px !important;
+}
+
+/* Primary Button Fix */
+.stButton > button {
+    background-color: #2563EB !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+}
+.stButton > button p {
+    color: #FFFFFF !important;
+}
+.stButton > button:hover {
+    background-color: #1D4ED8 !important;
+    color: #FFFFFF !important;
+}
+
+/* Tabs light styling */
+button[data-baseweb="tab"] {
+    color: #475569 !important;
+    font-weight: 600 !important;
+}
+button[aria-selected="true"] {
+    color: #2563EB !important;
+    border-bottom-color: #2563EB !important;
+}
+
+/* Dataframe container borders - Darkened for better contrast */
+[data-testid="stDataFrame"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #94A3B8 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Code Blocks - Forced Dark Mode for high contrast */
+[data-testid="stCodeBlock"] {
+    background-color: #1E293B !important;
+    border-radius: 8px !important;
+    border: 1px solid #0F172A !important;
+}
+[data-testid="stCodeBlock"] code {
+    color: #E2E8F0 !important;
+    background-color: transparent !important;
+}
+[data-testid="stCodeBlock"] span {
+    color: #93C5FD !important;
+}
+
+/* Radio buttons alignment */
+div.row-widget.stRadio > div {
+    flex-direction: row;
+    gap: 20px;
+}

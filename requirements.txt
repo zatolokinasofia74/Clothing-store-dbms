@@ -1,0 +1,6 @@
+streamlit
+psycopg2-binary
+redis
+pandas
+plotly
+faker
